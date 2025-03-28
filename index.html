@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Tourism Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h2  class="logo">kk<span>tour&travels</span></h2>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="TourGallery.html">Tour Gallery</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('show');
+            }
+        </script>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="text-content">
+                <h2>Explore the Braj with KK Travels</h2>
+            </div>
+        </div>
+        <img src="image1/v1.jpg" alt="Hero Image">
+    </div>
+    
+
+    <section class="features">
+        <div class="feature">
+            <img src="image1/pexels-photo-7820359.webp" alt="Easy Booking">
+            <h3>Easy Booking</h3>
+            <p>Book tickets with just a few clicks.</p>
+        </div>
+        <div class="feature">
+            <img src="image1/pay.jpg" alt="Secure Payments">
+            <h3>Secure Payments</h3>
+            <p>Your payments are always safe and secure.</p>
+        </div>
+        <div class="feature">
+            <img src="image1/ex2.jpg" alt="Exciting Packages">
+            <h3>Exciting Packages</h3>
+            <p>Choose from a variety of curated travel packages.</p>
+        </div>
+    </section>
+
+    <!-- Top Destinations Section -->
+<section class="top-destinations">
+    <h2>Top Destinations</h2>
+    <p>Most popular choices for travellers from Mathura And Vrindavan</p>
+    <div class="destinations-grid">
+        <!-- First destination with colspan effect -->
+        <div class="destination-card wide">
+            <img src="image1/prem.jpg" alt="Prem Mandir">
+            <div class="destination-overlay">
+                <h3>Prem Mandir </h3>
+            </div>
+        </div>
+        <div class="destination-card wide">
+            <img src="image1/bhumi.jpg" alt="janambhumi">
+            <div class="destination-overlay">
+                <h3>Janambhumi </h3>
+            </div>
+        </div>
+        <div class="destination-card id">
+            <img src="image1/veshno.webp" alt="Veshno Devi Temple">
+            <div class="destination-overlay">
+                <h3>Veshno Devi Temple </h3>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="image1/chandrodaya mandir.jpg" alt="Chandrodaya Mandir">
+            <div class="destination-overlay">
+                <h3>Chandrodaya Mandir</h3>
+            </div>
+        </div>
+        <div class="destination-card">
+            <img src="image1/iskon.jpg" alt="Iskon Temple">
+            <div class="destination-overlay">
+                <h3>Iskon Temple </h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <div class="subscription-form">
+        <div class="icon-container">
+          <img src="image1/ico_email_subscribe.svg" alt="Envelope Icon">
+        </div>
+        <div class="text-container">
+          <h2>Get Updates & More</h2>
+          <p>Thoughtful thoughts to your inbox</p>
+        </div>
+        <div class="input-container">
+          <input type="email" placeholder="Your Email">
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+
+
+    <!-- SIGNUP and LOGIN Section -->
+    <section class="sl-section">
+        <div class="sl-container">
+            <h2>Start Saving on Your Travel Budget.</h2>
+            <div class="sl-buttons">
+                <a href="contact.html" class="sl-btn sign-up-btn">contact Now</a>
+            
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>We offer the best travel and tour packages for exploring the world.</p><br>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <ul>
+                  <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="TourGallery.html">Tour Gallery</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section company-info">
+            <h3>Company Information</h3>
+            <ul>
+                <li><strong>Name:</strong> KK TOUR AND TRAVELS</li>
+              </ul>
+            <ul>
+              <li><strong>Founded:</strong> 2025</li>
+              <li><strong>Mission:</strong> To provide unique and unforgettable travel experiences worldwide.</li>
+              <li><strong>Our Team:</strong> A passionate group of travel experts dedicated to offering personalized services.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; Copyright© 2025-26. Design by SRVED TECH Pvt.Ltd</p>
+        </div>
+      </footer>
+      
+      
+</body>
+</html>

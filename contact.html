@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Management System</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        /* Contact Page Container */
+        .contact-page {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            max-width: 900px;
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 20px;
+            margin-left: 240px;
+        }
+
+        /* Left Section: Contact Info */
+        .contact-info {
+            background-color: #818981;
+            color: #fff;
+            flex: 2;
+            padding: 40px;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .contact-info p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 30px;
+            font-size: 20px;
+            margin-right: -20px;
+        }
+
+        /* Right Section: Contact Form */
+        .contact-form {
+            flex: 2;
+            width: 100%;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .contact-form h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #4CAF50;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .submit-btn {
+            background-color: #818981;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Media Query for Contact Page at 768px */
+        @media (max-width: 768px) {
+            .contact-page {
+                flex-direction: column;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .contact-info, .contact-form {
+                padding: 40px;
+            }
+
+            .contact-info h2 {
+                font-size: 24px;
+            }
+
+            .contact-form h3 {
+                font-size: 20px;
+            }
+
+            .form-group label {
+                font-size: 15px;
+            }
+
+            .form-group input, .form-group textarea {
+                font-size: 15px;
+            }
+
+            .submit-btn {
+                font-size: 15px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <h2  class="logo">kk<span>tour&travels</span></h2>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="TourGallery.html">Tour Gallery</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script>
+            function toggleMenu() {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('show');
+            }
+        </script>
+    </header>
+    
+
+       <!-- Contact Page Container -->
+       <div class="contact-page">
+        <!-- Left Section: Contact Information -->
+        <div class="contact-info">
+            <h3 style="font-weight: 600; margin-bottom: 30px;">Contact Us</h3>
+            <p>We would love to hear from you! Reach out using the form or through our contact information below.</p>
+            <!-- <ul>
+                <li><strong>Email:</strong> Krishnakant4it@gmail.com</li>
+                <li><strong>Phone:</strong> +91 7351571756</li>
+                <li><strong>Location:</strong> BSA Road Anandpuri, Mathura, Uttar Pradesh</li>
+            </ul> -->
+
+            <h2><span class="glyphicon glyphicon-envelope"></span> Email:</h2>
+            <p>Krishnakant4it@gmail.com</p>
+            <h2><span class="glyphicon glyphicon-phone-alt"></span> Phone:</h2>
+            <p>+91 73515 71756</p>
+            <h2>Address:</h2>
+            <p>BSA Road Anandpuri, Mathura, Uttar Pradesh</p>
+        </div>
+        
+        <!-- Right Section: Contact Form -->
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <h3>Send Us a Message</h3>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+ 
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>We offer the best travel and tour packages for exploring the world.</p><br>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <ul>
+                  <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="TourGallery.html">Tour Gallery</a></li>
+                    <li><a href="Aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section company-info">
+            <h3>Company Information</h3>
+            <ul>
+              <li><strong>Founded:</strong> 2010</li>
+              <li><strong>Mission:</strong> To provide unique and unforgettable travel experiences worldwide.</li>
+              <li><strong>Our Team:</strong> A passionate group of travel experts dedicated to offering personalized services.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Tour and Travels. All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
